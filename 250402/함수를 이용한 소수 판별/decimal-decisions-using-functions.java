@@ -17,6 +17,8 @@ public class Main {
 
     }
     public static boolean isPrime(int su){
+    if(su==2) return true;
+    if(su==1) return false;
     for(int i = 2; i<su; i++){
         if(su%i==0){
             return false;
