@@ -6,7 +6,7 @@ public class Main {
         int b = sc.nextInt();
         // Please write your code here.
         int cnt = 0;
-        for(int i = a ; i< b ; i++){
+        for(int i = a ; i<= b ; i++){
             if(sosu(i)&&hapzzak(i)){{
                 cnt++;
             }}
