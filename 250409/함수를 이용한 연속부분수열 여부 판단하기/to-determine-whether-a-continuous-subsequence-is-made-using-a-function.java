@@ -29,9 +29,11 @@ public class Main {
     }
 
     public static int[] extractSame(int index,int[] arr,int cnt){
+        
         int[] etd = new int[cnt];
         int now = 0;
         for(int i=0; i<cnt; i++){
+            if(i+cnt>arr.length){break;}
             etd[now] = arr[i+index];
             now++;
         }
