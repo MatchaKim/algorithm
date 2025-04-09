@@ -33,7 +33,6 @@ public class Main {
         int[] etd = new int[cnt];
         int now = 0;
         for(int i=0; i<cnt; i++){
-            if(i+cnt>arr.length){break;}
             etd[now] = arr[i+index];
             now++;
         }
@@ -42,7 +41,7 @@ public class Main {
     }
 
     public static boolean mainLogic(int[] 긴거, int[] 짧은거){
-        for(int i = 0; i< 짧은거.length; i++){
+        for(int i = 0; i <= 긴거.length - 짧은거.length; i++){
             if(긴거[i]==짧은거[0]){
                 int[] etd = extractSame(i,긴거,짧은거.length);
                 if(isYeonsok(etd,짧은거))return true;
