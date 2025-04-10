@@ -5,6 +5,10 @@ public class Main {
         int m = sc.nextInt();
         int d = sc.nextInt();
         // Please write your code here.
+        if(m>12){
+            System.out.println("No");
+            return;
+        }
 
         int fd = getFullDays(m);
         if(fd>=d){
