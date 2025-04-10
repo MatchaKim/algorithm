@@ -45,7 +45,7 @@ public class Main {
     public static void printSeason(int y){
         if(3<=y && 5>=y ){
 System.out.println("Spring");
-        }else if(3<=y && 5>=y ){
+        }else if(6<=y && 8>=y ){
 System.out.println("Summer");
         }else if(9<=y && 11>=y ){
 System.out.println("Fall");
