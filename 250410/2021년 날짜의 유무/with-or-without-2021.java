@@ -21,7 +21,7 @@ public class Main {
     public static int getFullDays(int month){
         if(month==2){
             return 28;
-        }else if(month<7){
+        }else if(month<7&&month!=2){
             if(isOdd(month)) return 31;
         }else{
             if(!isOdd(month)) return 31;
