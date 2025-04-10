@@ -15,7 +15,7 @@ public class Main {
 
         return false; 
     }
-    public static int isValid(int y,int m,int d){
+    public static void isValid(int y,int m,int d){
         if(getFullDays(y,m,d)>=d && m<13){
             printSeason(m);
         }else{
