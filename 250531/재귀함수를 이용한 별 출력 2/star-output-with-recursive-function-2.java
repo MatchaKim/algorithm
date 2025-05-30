@@ -4,29 +4,21 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        printStars(n, true, n);
+        printStar(n);
     }
 
-    public static void printLine(int count) {
-        if (count == 0) {
-            System.out.println();
+    public static void printStar(int n){
+        if(n==0)
             return;
-        }
-        System.out.print("* ");
-        printLine(count - 1);
-    }
 
-    public static void printStars(int current, boolean decreasing, int n) {
-        if (current == 0 && decreasing) {
-            printStars(1, false, n);
-            return;
-        }
-        if (current > n && !decreasing) return;
+        for(int i =1; i<= n; i++)
+            System.out.print("* ");
+        System.out.println();
 
-        printLine(current);
-        if (decreasing)
-            printStars(current - 1, true, n);
-        else
-            printStars(current + 1, false, n);
+        printStar(n-1);
+
+        for(int i = 1; i<=n; i++)
+            System.out.print("* ");
+        System.out.println();
     }
 }
